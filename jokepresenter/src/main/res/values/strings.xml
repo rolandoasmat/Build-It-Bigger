@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JokePresenter</string>
+    <string name="pun_of_the_day">Pun of the day:</string>
+    <string name="no_pun">No pun found! :(</string>
+</resources>
