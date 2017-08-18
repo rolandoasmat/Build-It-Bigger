@@ -12,6 +12,8 @@ import com.google.api.server.spi.config.ApiNamespace;
 
 import javax.inject.Named;
 
+import com.rolo.DevPuns;
+
 /**
  * An endpoint class we are exposing
  */
@@ -37,4 +39,14 @@ public class MyEndpoint {
         return response;
     }
 
+    /**
+     * A simple endpoint method that return a Pun
+     */
+    @ApiMethod(name = "getPun")
+    public MyBean getPun() {
+        String pun = DevPuns.getPun();
+        MyBean response = new MyBean();
+        response.setData(pun);
+        return response;
+    }
 }
