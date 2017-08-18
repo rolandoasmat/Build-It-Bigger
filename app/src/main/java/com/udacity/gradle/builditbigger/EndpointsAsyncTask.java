@@ -17,7 +17,7 @@ import java.io.IOException;
  * Created by rolandoasmat on 8/18/17.
  */
 
-class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
+public class EndpointsAsyncTask extends AsyncTask<Context, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
 
